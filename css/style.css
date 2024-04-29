@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hero {
+  background-image: url(../img/Rectangle\ 26.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.hero h2 {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  color: red;
+}
+.hero h1 {
+  font-size: 60px;
+  text-align: center;
+}
+.hero img {
+  position: absolute;
+  bottom: 25px;
+}
+
+.Story {
+  text-align: center;
+}
+.Story .img-fluid {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.Story h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.Story p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.Story button {
+  background-color: orangered;
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid orangered;
+}
+
+.activities {
+  text-align: center;
+}
+.activities h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.activities .img-fluid {
+  width: 100%;
+}
+.activities .pictures .pic {
+  position: relative;
+  margin-bottom: 15px;
+}
+.activities .pictures .pic .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.144);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding-bottom: 20 p;
+  padding-bottom-text-align: center;
+}
+
+.wildlife {
+  text-align: center;
+}
+.wildlife p {
+  text-align: left;
+  padding-bottom: 10px;
+}
+.wildlife h2 {
+  padding-bottom: 15px;
+}
+.wildlife .img-fluid {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.itenaries .orange {
+  height: 100%;
+}
+.itenaries .orange .luxury {
+  position: relative;
+  width: 100%;
+  background-color: orangered;
+  padding: 25px;
+  color: white;
+}
+.itenaries .best {
+  position: relative;
+}
+.itenaries .best .over {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding-bottom: 20;
+}
+
+.testimonials {
+  margin-bottom: 40px;
+}
+.testimonials .Jacob {
+  position: relative;
+}
+.testimonials .Jacob .Stone {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.274);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.testimonials .Jacob h3 {
+  position: absolute;
+  bottom: 20px;
+}
+.testimonials .Gemma {
+  border: 1px solid orangered;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .Gemma p {
+  text-align: center;
+}
+.testimonials .Gemma img {
+  margin-bottom: 10px;
+}
+
+.Gallery {
+  margin-bottom: 40px;
+}
+.Gallery .img-fluid {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+footer {
+  padding: 25px;
+  background-color: orangered;
+  color: white;
+}
+footer a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+footer button {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  position: absolute;
+}
+footer .input {
+  position: relative;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .hero {
+    background-image: url(../img/zebra\ banner\ 2\ 1.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .hero .links {
+    display: flex;
+    color: white;
+    font-size: 25px;
+  }
+  .hero h2 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: red;
+  }
+  .hero h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .hero img {
+    position: absolute;
+    bottom: 25px;
+  }
+  .Story {
+    text-align: center;
+  }
+  .Story .img-fluid {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Story h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .Story p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .Story button {
+    background-color: orangered;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid orangered;
+  }
+  .activities {
+    display: flex;
+    flex-direction: row;
+  }
+  .activities h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .activities .img-fluid {
+    width: 20%;
+  }
+  .activities .pictures .pic {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .activities .pictures .pic .overlay {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.144);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-bottom: 20 p;
+    padding-bottom-text-align: center;
+  }
+  .wildlife {
+    text-align: center;
+  }
+  .wildlife p {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .wildlife h2 {
+    padding-bottom: 15px;
+  }
+  .wildlife .img-fluid {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .itenaries .orange {
+    height: 100%;
+  }
+  .itenaries .orange .luxury {
+    position: relative;
+    width: 50%;
+    background-color: orangered;
+    padding: 25px;
+    color: white;
+  }
+  .itenaries .best {
+    position: relative;
+  }
+  .itenaries .best .over {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-bottom: 20;
+  }
+  .itenaries .best .img-fluid {
+    width: 3opx;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
